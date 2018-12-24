@@ -40,7 +40,34 @@ export default {
   },
   data () {
     return {
-      accountList: [],
+      accountList: [{
+        id: 1,
+        name: 'one',
+        description: 'description for test one',
+        currency: 'RUB',
+        amount: 10000
+      },
+      {
+        id: 2,
+        name: 'two',
+        description: 'description for test two',
+        currency: 'USD',
+        amount: 200
+      },
+      {
+        id: 3,
+        name: 'three',
+        description: 'description for test three',
+        currency: 'EUR',
+        amount: 180
+      },
+      {
+        id: 4,
+        name: 'four',
+        description: 'description for test four',
+        currency: 'JPY',
+        amount: 16000
+      }],
       errorText: '',
       showAlert: false
     }
