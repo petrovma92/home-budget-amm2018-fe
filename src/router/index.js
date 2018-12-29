@@ -4,6 +4,7 @@ import Home from '@/components/Home'
 import Login from '@/components/Login'
 import Register from '@/components/Register'
 import AccountDetails from '@/components/AccountDetails'
+import Test from '@/components/Test'
 
 Vue.use(Router)
 
@@ -25,6 +26,10 @@ export default new Router({
       path: '/account/*',
       name: 'Account details',
       component: AccountDetails
+    }, {
+      path: '/test',
+      name: 'Test',
+      component: Test
     }
   ]
 })

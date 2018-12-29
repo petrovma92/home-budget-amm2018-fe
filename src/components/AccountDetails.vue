@@ -7,23 +7,42 @@
       <b-btn class="btn-success mb-3" @click="createAccount">New account</b-btn>
       <b-btn class="mb-3">Add expense</b-btn>
     </div>
-    <template>
-      <b-table striped hover :items="accountList" :fields="fields"></b-table>
-    </template>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm p-3">
+          <div class="float-left">
+          <h5>From:</h5>
+          <datetime></datetime>
+          </div>
+        </div>
+        <div class="col-sm p-3">
+          <div class="float-right">
+          <h5>To:</h5>
+          <datetime></datetime>
+          </div>
+        </div>
+      </div>
+
+      <template>
+        <div class="top"></div>
+
+        <b-table striped hover :items="accountList" :fields="fields"></b-table>
+      </template>
+    </div>
 
   </div>
 </div>
 </template>
 
 <script>
-import AccountShort from '@/components/AccountShort'
 import MenuBar from '@/components/MenuBar'
+import DateTime from '@/components/DateTime'
 
 export default {
   name: 'Home',
   components: {
-    'account-short': AccountShort,
-    'menu-bar': MenuBar
+    'menu-bar': MenuBar,
+    'datetime': DateTime
   },
   methods: {
     loadAccounts () {
