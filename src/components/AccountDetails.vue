@@ -49,6 +49,7 @@ export default {
       console.log('IMPLEMENT ME')
     },
     createAccount () {
+      console.log('createAccount IMPLEMENT ME')
       this.$router.push({name: 'NewAccount'})
     }
   },

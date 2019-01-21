@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Home from '@/components/Home'
 import Login from '@/components/Login'
 import Register from '@/components/Register'
+import NewAccount from '@/components/NewAccount'
 import AccountDetails from '@/components/AccountDetails'
 import Test from '@/components/Test'
 
@@ -26,6 +27,10 @@ export default new Router({
       path: '/account/*',
       name: 'Account details',
       component: AccountDetails
+    }, {
+      path: '/newaccount',
+      name: 'New Account',
+      component: NewAccount
     }, {
       path: '/test',
       name: 'Test',

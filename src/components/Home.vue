@@ -35,7 +35,7 @@ export default {
       console.log('IMPLEMENT ME')
     },
     createAccount () {
-      this.$router.push({name: 'NewAccount'})
+      this.$router.push({name: 'New Account'})
     }
   },
   data () {
